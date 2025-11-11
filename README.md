@@ -1,13 +1,47 @@
 # Solar Challenge Week 0
 
-This repository contains the Solar Challenge Week 0 project.  
-Follow the steps below to reproduce the environment using **Conda**.
+This repository contains the **Solar Challenge Week 0** project. The project focuses on performing **Exploratory Data Analysis (EDA)** on solar radiation and meteorological data across multiple countries. It includes data cleaning, visualization, and cross-country analysis.
 
 ---
 
-## Environment Setup (Conda)
+## Table of Contents
 
-```bash
+1. [Project Overview](#project-overview)  
+2. [Folder Structure](#folder-structure)  
+3. [Environment Setup (Conda)](#environment-setup-conda)  
+4. [Usage](#usage)  
+5. [Example Output](#example-output)  
+6. [Running Tests](#running-tests)  
+7. [Contributing](#contributing)  
+8. [License](#license)  
+
+---
+
+## Project Overview
+
+The goals of this project are:
+
+- Analyze solar radiation and weather data for multiple countries.  
+- Generate summary statistics and visualizations.  
+- Compare trends across countries in a structured way.  
+- Create clean, reproducible analysis scripts.  
+- (Optional) Prepare interactive dashboards for visual insights.
+
+---
+
+## Folder Structure
+
+```text
+solar-challenge-week0/
+├── data/                  # Raw and cleaned datasets
+├── notebooks/             # Jupyter notebooks for EDA and analysis
+├── scripts/               # Python scripts for data cleaning, visualization
+├── tests/                 # Unit tests for functions and scripts
+├── outputs/               # Generated plots, tables, and reports
+├── requirements.txt       # Python dependencies
+├── main.py                # Main script to run the project
+└── README.md              # Project documentation
+
 # 1. Clone the repository
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
@@ -23,22 +57,16 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 # 5. (Optional) Install common packages if requirements.txt doesn't exist
-pip install requests flask pytest
+pip install requests flask pytest pandas matplotlib seaborn
 
 # 6. Freeze installed packages into requirements.txt
 pip freeze > requirements.txt
 
 # 7. Verify the environment
-python --version        # should report Python 3.11.x
+python --version
 pip --version
-pip list                # lists installed packages
+pip list
 
-# 8. Run the project (replace main.py if your entry point differs)
 python main.py
 
-# 9. Run tests
-pytest -v
-
-# 10. Deactivate the environment when done
-conda deactivate
 
