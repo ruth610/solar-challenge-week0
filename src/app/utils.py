@@ -5,9 +5,9 @@ import streamlit as st
 @st.cache_data
 def load_combined_data():
     files = {
-        'Benin': './cleaned_data/benin_clean.csv',
-        'SierraLeone': './cleaned_data/sierraleone_clean.csv',
-        'Togo': './cleaned_data/togo_clean.csv'
+        'Benin': 'src/app/cleaned_data/benin_clean.csv',
+        'SierraLeone': 'src/app/cleaned_data/sierraleone_clean.csv',
+        'Togo': 'src/app/cleaned_data/togo_clean.csv'
     }
     combined = []
     for country, path in files.items():
