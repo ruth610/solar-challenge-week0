@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-from app.utils import load_combined_data, summary_table
+from utils import load_combined_data, summary_table
 
 st.set_page_config(page_title="Solar Compare", layout="wide")
 
