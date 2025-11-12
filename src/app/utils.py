@@ -1,10 +1,13 @@
 import pandas as pd
+import streamlit as st
 
+
+@st.cache_data
 def load_combined_data():
     files = {
-        'Benin': '../../data/benin_clean.csv',
-        'SierraLeone': '../../data/sierraleone_clean.csv',
-        'Togo': '../../data/togo_clean.csv'
+        'Benin': 'benin_clean.csv',
+        'SierraLeone': 'sierraleone_clean.csv',
+        'Togo': 'togo_clean.csv'
     }
     combined = []
     for country, path in files.items():
